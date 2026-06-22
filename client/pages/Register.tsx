@@ -60,13 +60,14 @@ export default function Register() {
                   className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-600 dark:focus:ring-orange-500"
                   placeholder="••••••••"
                 />
-                <Link
-                  to="/forgot-password"
-                  className="text-sm text-orange-600 dark:text-orange-500 hover:underline mt-2 block"
-                >
-                  Forgot password?
-                </Link>
               </div>
+
+              <Link
+                to="/forgot-password"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-orange-600 dark:text-orange-500 font-medium hover:bg-orange-50 dark:hover:bg-slate-700 transition-all focus:outline-none focus:ring-2 focus:ring-orange-600 dark:focus:ring-orange-500 text-center block"
+              >
+                Forgot password?
+              </Link>
 
               <label className="flex items-start">
                 <input
