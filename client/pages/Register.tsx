@@ -60,6 +60,12 @@ export default function Register() {
                   className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-600 dark:focus:ring-orange-500"
                   placeholder="••••••••"
                 />
+                <Link
+                  to="/forgot-password"
+                  className="text-sm text-orange-600 dark:text-orange-500 hover:underline mt-2 block"
+                >
+                  Forgot password?
+                </Link>
               </div>
 
               <label className="flex items-start">
@@ -243,16 +249,10 @@ export default function Register() {
                 </ul>
               </div>
 
-              <div className="text-center space-y-3">
+              <div className="text-center">
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   🎓 Join 10,000+ successful candidates
                 </p>
-                <Link
-                  to="/forgot-password"
-                  className="block text-sm text-orange-600 dark:text-orange-500 hover:underline font-medium"
-                >
-                  Forgot your password?
-                </Link>
               </div>
             </div>
           </div>
