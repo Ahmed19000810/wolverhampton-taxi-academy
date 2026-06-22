@@ -39,7 +39,7 @@ export default function Index() {
                   to="/register"
                   className="px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg transition-all transform hover:scale-105 text-center"
                 >
-                  Start Free Trial
+                  Get Started
                 </Link>
                 <Link
                   to="/features"
@@ -166,7 +166,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Pricing Section Preview */}
+      {/* Pricing Section */}
       <section className="py-20 sm:py-32 bg-gray-50 dark:bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -174,106 +174,58 @@ export default function Index() {
               Simple, Transparent Pricing
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Choose the plan that works best for you
+              One price, complete access to everything
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Basic",
-                price: "$19",
-                period: "month",
-                features: [
-                  "500+ Practice Questions",
-                  "Progress Tracking",
-                  "Mobile Access",
-                  "Community Support",
-                ],
-                highlighted: false,
-              },
-              {
-                name: "Premium",
-                price: "$49",
-                period: "month",
-                features: [
-                  "5000+ Practice Questions",
-                  "AI Learning Assistant",
-                  "Unlimited Mock Exams",
-                  "Progress Reports",
-                  "30+ Languages",
-                  "Priority Support",
-                ],
-                highlighted: true,
-              },
-              {
-                name: "Lifetime",
-                price: "$299",
-                period: "one-time",
-                features: [
-                  "All Premium Features",
-                  "Lifetime Access",
-                  "Future Updates Included",
-                  "No Recurring Charges",
-                ],
-                highlighted: false,
-              },
-            ].map((plan, i) => (
-              <div
-                key={i}
-                className={`rounded-xl transition-all ${
-                  plan.highlighted
-                    ? "ring-2 ring-orange-600 dark:ring-orange-500 transform lg:scale-105 bg-white dark:bg-slate-800 shadow-xl"
-                    : "bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700"
-                }`}
-              >
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                    {plan.name}
-                  </h3>
-                  <div className="mb-6">
-                    <span className="text-5xl font-bold text-gray-900 dark:text-white">
-                      {plan.price}
-                    </span>
-                    <span className="text-gray-600 dark:text-gray-400 ml-2">
-                      /{plan.period}
-                    </span>
-                  </div>
-
-                  <Link
-                    to="/register"
-                    className={`block text-center w-full py-3 rounded-lg font-semibold transition-all mb-8 ${
-                      plan.highlighted
-                        ? "bg-orange-600 hover:bg-orange-700 text-white"
-                        : "border border-orange-600 text-orange-600 hover:bg-orange-50 dark:hover:bg-slate-700"
-                    }`}
-                  >
-                    Get Started
-                  </Link>
-
-                  <ul className="space-y-4">
-                    {plan.features.map((feature, j) => (
-                      <li
-                        key={j}
-                        className="flex items-center gap-3 text-gray-700 dark:text-gray-300"
-                      >
-                        <CheckCircle className="w-5 h-5 text-orange-600 dark:text-orange-500 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white dark:bg-slate-800 rounded-xl ring-2 ring-orange-600 dark:ring-orange-500 shadow-xl">
+              <div className="p-8 sm:p-12">
+                <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                  Complete Access
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-6">
+                  Everything you need to pass your exam
+                </p>
+                <div className="mb-8">
+                  <span className="text-6xl font-bold text-gray-900 dark:text-white">
+                    £150
+                  </span>
+                  <span className="text-gray-600 dark:text-gray-400 ml-2 text-lg">
+                    one-time payment
+                  </span>
                 </div>
-              </div>
-            ))}
-          </div>
 
-          <div className="text-center mt-12">
-            <Link
-              to="/pricing"
-              className="text-orange-600 dark:text-orange-500 font-semibold hover:underline"
-            >
-              View all pricing details →
-            </Link>
+                <Link
+                  to="/register"
+                  className="block text-center w-full py-4 bg-orange-600 hover:bg-orange-700 text-white font-bold text-lg rounded-lg transition-all mb-8"
+                >
+                  Get Started Now
+                </Link>
+
+                <ul className="space-y-4">
+                  {[
+                    "5000+ Practice Questions",
+                    "AI Learning Assistant",
+                    "Unlimited Mock Exams",
+                    "Progress Reports & Analytics",
+                    "30+ Language Support",
+                    "Instant Feedback & Explanations",
+                    "Lifetime Access",
+                    "Future Updates Included",
+                    "Priority Support",
+                  ].map((feature, j) => (
+                    <li
+                      key={j}
+                      className="flex items-center gap-3 text-gray-700 dark:text-gray-300"
+                    >
+                      <CheckCircle className="w-5 h-5 text-orange-600 dark:text-orange-500 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -339,13 +291,14 @@ export default function Index() {
             Ready to Pass Your Wolverhampton PHV Test?
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Get started today and access everything you need to succeed.
+            Get complete access for just £150. One payment, lifetime access to
+            all features.
           </p>
           <Link
             to="/register"
             className="inline-block px-8 py-4 bg-white hover:bg-gray-100 text-orange-600 font-bold rounded-lg transition-all transform hover:scale-105"
           >
-            Sign Up Now
+            Get Started Now
           </Link>
         </div>
       </section>
