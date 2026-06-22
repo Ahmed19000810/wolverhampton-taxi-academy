@@ -243,10 +243,16 @@ export default function Register() {
                 </ul>
               </div>
 
-              <div className="text-center">
+              <div className="text-center space-y-3">
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   🎓 Join 10,000+ successful candidates
                 </p>
+                <Link
+                  to="/forgot-password"
+                  className="block text-sm text-orange-600 dark:text-orange-500 hover:underline font-medium"
+                >
+                  Forgot your password?
+                </Link>
               </div>
             </div>
           </div>
