@@ -268,9 +268,6 @@ export default function Index() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              All plans include a 7-day free trial. No credit card required.
-            </p>
             <Link
               to="/pricing"
               className="text-orange-600 dark:text-orange-500 font-semibold hover:underline"
@@ -342,14 +339,13 @@ export default function Index() {
             Ready to Pass Your Wolverhampton PHV Test?
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Start your free trial today. No credit card required. Access all
-            features for 7 days.
+            Get started today and access everything you need to succeed.
           </p>
           <Link
             to="/register"
             className="inline-block px-8 py-4 bg-white hover:bg-gray-100 text-orange-600 font-bold rounded-lg transition-all transform hover:scale-105"
           >
-            Start Free Trial
+            Sign Up Now
           </Link>
         </div>
       </section>

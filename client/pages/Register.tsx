@@ -93,28 +93,6 @@ export default function Register() {
               </button>
             </form>
 
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-300 dark:border-slate-600"></div>
-              </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white dark:bg-slate-900 text-gray-600 dark:text-gray-400">
-                  Or sign up with
-                </span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-3 gap-4">
-              <button className="py-3 border border-gray-300 dark:border-slate-600 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-all font-semibold text-gray-700 dark:text-white">
-                Google
-              </button>
-              <button className="py-3 border border-gray-300 dark:border-slate-600 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-all font-semibold text-gray-700 dark:text-white">
-                Facebook
-              </button>
-              <button className="py-3 border border-gray-300 dark:border-slate-600 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-800 transition-all font-semibold text-gray-700 dark:text-white">
-                Apple
-              </button>
-            </div>
 
             <p className="text-center text-gray-600 dark:text-gray-400">
               Already have an account?{" "}
