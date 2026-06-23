@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
+import AILearning from "./pages/AILearning";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/ai-learning" element={<AILearning />} />
           <Route path="/features" element={<Placeholder />} />
           <Route path="/pricing" element={<Placeholder />} />
           <Route path="/about" element={<Placeholder />} />

@@ -9,6 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const navLinks = [
     { path: "/", label: "Home" },
+    { path: "/ai-learning", label: "AI Tutor" },
     { path: "/features", label: "Features" },
     { path: "/pricing", label: "Pricing" },
     { path: "/about", label: "About" },
